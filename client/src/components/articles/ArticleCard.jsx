@@ -12,9 +12,9 @@ const ArticleCard = ({ variant, card }) => {
     }
 
     return ( 
-        <div className="bg-white w-72 h-96 flex flex-col rounded-se-lg" dir="ttb">
+        <div className="flex flex-col h-auto bg-white mobile:w-4/5 md:w-72 min-h-96 rounded-se-lg" dir="ttb">
             <div className={`w-full h-72 bg-no-repeat bg-center bg-cover rounded-tl-xl rounded-tr-xl  ${images[variant]}`} />
-            <article className=" h-1/2 flex flex-col p-4 space-y-2">
+            <article className="flex flex-col p-8 space-y-2 text-left h-1/2">
                 <p className="text-xs">{Text.author}</p>
                 <h3 className="text-darkblue">{Text.title}</h3>
                 <h4 className="text-sm">{Text.content}</h4>

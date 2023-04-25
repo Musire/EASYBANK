@@ -12,10 +12,10 @@ const ServiceCard = ({ variant, card }) => {
     }
 
     return ( 
-        <div className="w-80 pl-4 flex flex-col space-y-8">
+        <div className="flex flex-col pl-4 space-y-8 mobile:w-full md:w-80 mobile:items-center md:items-start mobile:text-center md:text-left">
             <div src="" alt="" className={`w-20 h-20 bg-no-repeat bg-cover ${icons[variant]}`} />
-            <h3 className="text-darkblue text-2xl">{Text.title}</h3>
-            <h4 className="text-grayblue text-lg">{Text.content}</h4>
+            <h3 className="text-2xl text-darkblue">{Text.title}</h3>
+            <h4 className="text-lg text-grayblue">{Text.content}</h4>
         </div>
      );
 }
