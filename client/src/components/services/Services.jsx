@@ -9,7 +9,7 @@ const Services = () => {
     return ( 
         <div className="w-screen mobile:min-h-screen mobile:h-auto desktop:h-screen bg-lightgrayblue mobile:centered-col md:centered md:py-8">
             <div className="flex flex-col space-y-16 mobile:items-center mobile:w-full mobile:h-full md:items-start md:w-4/5 md:h-4/5 mobile:py-16 md:py-0">
-                <section className="flex flex-col px-4 space-y-8 mobile:w-5/6 desktop:w-3/5 mobile:text-center md:text-left">
+                <section className="flex flex-col px-4 space-y-8 mobile:w-5/6 md:w-4/5 desktop:w-3/5 mobile:text-center md:text-left">
                     <h2 className="text-4xl text-darkblue">{Text.title}</h2>
                     <h4 className="text-xl text-grayblue">{Text.subtitle}</h4>
                 </section>
